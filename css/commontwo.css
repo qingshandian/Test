@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:1rem/1.3 Helvetica,"STHeiti STXihei","Microsoft JhengHei","Microsoft YaHei",Tohoma,Arial;outline:0;}
+a,a:hover{color:#666666;}
+
+/*公共类*/
+html{ font-size:62.5%;}
+.contentwrap{ padding:0 5%;}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.c-f60{
+	color:#f60;
+}
+.bgc-f60{
+	background-color:#f60;
+}
+.container-fluid{
+	max-width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    min-height: 100%;
+	background-color:#fff;
+	padding-bottom:7rem;
+}
+
+/*头部*/
+header{
+	height:4rem;
+	background-color:#252525;
+}
+header a{
+	position:absolute;
+	height:4rem;
+	line-height:4rem;
+	color:#FFF;
+	font-size:1.5rem;
+	width:4rem;
+	text-align:center;
+	font-size:2rem;
+}
+header h1{
+	line-height:4rem;
+	text-align:center;
+	color:#FFF;
+	font-size:1.5rem;
+	font-weight:normal;
+}
+
+/*注册*/
+.register{ padding:0;}
+.register .register-ad{
+	height:auto;
+}
+.register .register-ad img{
+	width:100%;
+	display:block;
+}
+.register .form{
+	background-color:#fedc9f;
+	padding:3% 5%;
+	background: -moz-linear-gradient(top, #fedc9f, #fee8c1);
+	/* Safari 4-5, Chrome 1-9 */
+	/* -webkit-gradient(,  [, ]?,  [, ]? [, ]*) */
+	background: -webkit-gradient(linear,top,from(#fedc9f),to(#fee8c1));
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #fedc9f, #fee8c1);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #fedc9f, #fee8c1);
+}
+.register .form-group{
+	margin-bottom:1.3rem;
+	position:relative;
+}
+.register .form-group i{
+	position:absolute;
+	display:inline-block;
+	left:2rem;
+	top:1rem;
+	width:2rem;
+	height:2rem;
+}
+.register .phone i{	
+	background:url(../images/login/phone.png) no-repeat;
+	background-size:100%;
+}
+.register .pwd i{
+	background:url(../images/login/pwd.png) no-repeat;
+	background-size:100%;
+}
+.register .form-group input{
+	border:0;
+	height:4rem;
+	line-height:4rem;
+	border-radius:10rem;
+	width:100%;
+	font-size:1.3rem;
+	padding:0 2rem 0 5rem;
+}
+.register .captcha input{
+	width:52%;
+	padding:0 2rem;
+}
+.register .captcha .captcha-con{
+	float:right;
+	width:43%;
+	height:4rem;
+	border-radius:10rem;
+	background-color:#fff;
+}
+.register .captcha .captcha-con img{
+	float:left;
+	margin:1rem 0 0 1.1rem;
+	width:55%
+}
+.register .captcha .captcha-con a{
+	background:url(../images/login/refresh.png) no-repeat;
+	background-size:100%;
+	width:19%;
+	height:3rem;
+	display:inline-block;
+	margin:6% 0 0 9%;
+}
+.register .invite input{
+	padding:0 2rem;
+}
+.register .invite input::-moz-placeholder { 
+    color: #b67900;
+}
+
+.register .invite input:-ms-input-placeholder{
+    color: #b67900;
+}
+
+.register .invite input::-webkit-input-placeholder{
+    color: #b67900;
+}
+.register .protocol{
+	height:2.6rem;
+	line-height:2.6rem;
+	font-size:1.3rem;
+}
+.register .protocol div{
+	font-size:1.3rem;
+	height:2.6rem;
+	line-height:2.6rem;	
+	display:inline-block;
+	float:left;
+}
+.register .protocol div i{
+	position:relative;
+	top:0.3rem;
+	background:url(../images/login/checked.png) no-repeat 0 -2.1rem;
+	background-size:100%;
+	display:inline-block;
+	width:2rem;
+	height:2rem;
+	float:left;
+}
+.register .protocol div i.on{
+	position:relative;
+	top:0.3rem;
+	background:url(../images/login/checked.png) no-repeat 0 0.1rem;
+	background-size:100%;
+	display:inline-block;
+	width:2rem;
+	height:2rem;
+	float:left;
+}
+.register .protocol input{
+	opacity: 0;
+    width: 2rem;
+    height: 2rem;
+    margin-left: -2rem;
+    margin-top: 0.3rem;
+    float: left;
+	z-index: 999;
+    position: relative;
+}
+.register .protocol a{
+	font-size:1.3rem;
+}
+.register .form-btn{
+	margin-top:1rem;
+}
+.register .form-btn button{
+	width:100%;
+	height:4rem;
+	line-height:4rem;
+	display:inline-block;
+	text-align:center;
+	border:0;
+	background-color:#f60;
+	border-radius:10rem;
+	color:#fff;
+	font-size:1.4rem;
+}
+.register .register-ad02 img{
+	width:100%;
+	margin:0 auto;
+	display:block;
+}
+.register .contentwrap p{
+	font-size:1rem;
+	margin:0.2rem 0;
+	height:2rem;
+	line-height:2rem;
+}
+.register .contentwrap.qrcode{
+	text-align:center;
+	margin-top:1rem;
+}
+.register .contentwrap.qrcode>p{
+	font-size:1.2rem;
+	margin:0.3rem;
+}
+.register .qrcode-img{
+	display:block;
+	width:40%;
+	margin:0 auto;
+}
+.register .qrcode-img img{
+	display:block;
+	width:100%;
+	border:1px solid #e5e5e5;
+}
+.register .qrcode .qrcode-button{
+	width:100%;
+	height:3.6rem;
+	line-height:3.6rem;
+	border-radius:0.3rem;
+	color:#fff;
+	background-color:#f60;
+	display:block;
+	font-size:1.5rem;
+	margin:1rem 0;
+}
